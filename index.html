@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>and / or / space</title>
+  
+  <!-- Google Font: Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="images/and_or_space-logo.png" alt="and / or / space">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#events">Events</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section 1: Hero / Current Exhibition -->
+  <section class="section-wrapper bg-gray">
+    <div class="container hero-grid">
+      <div class="hero-details">
+        <div class="hero-label">Current Exhibition</div>
+        <h1 class="hero-artist">Jered Sprecher</h1>
+        <h2 class="hero-title">A Selection of Recent Work</h2>
+        <div class="hero-dates">Friday October 30, 2026-March 2027</div>
+        <a href="#about" class="hero-link">About the Show</a>
+      </div>
+
+      <!-- Hero 5-Image Slideshow -->
+      <div class="hero-slideshow-wrapper">
+        <div class="slideshow-container" id="heroSlideshow">
+          <!-- Slide 1 -->
+          <div class="slide active">
+            <img src="images/jered-sprecher/JeredSprecher_Exile_12x16_2024.jpg" alt="Jered Sprecher Exile 12x16 2024">
+            <p class="slide-caption">Jered Sprecher, <i>Exile</i>, 12x16, 2024</p>
+          </div>
+          <!-- Slide 2 -->
+          <div class="slide">
+            <img src="images/jered-sprecher/JeredSprecher_MoonLight_30x22_2024.jpg" alt="Jered Sprecher MoonLight 30x22 2024">
+            <p class="slide-caption">Jered Sprecher, <i>MoonLight</i>, 30x22, 2024</p>
+          </div>
+          <!-- Slide 3 -->
+          <div class="slide">
+            <img src="images/jered-sprecher/JeredSprecher_PrayersWeDidNotPray_16x12_2024.jpg" alt="Jered Sprecher Prayers We Did Not Pray 16x12 2024">
+            <p class="slide-caption">Jered Sprecher, <i>Prayers We Did Not Pray</i>, 16x12, 2024</p>
+          </div>
+          <!-- Slide 4 -->
+          <div class="slide">
+            <img src="images/jered-sprecher/JeredSprecher_Qoheleth_16x12_2024.jpg" alt="Jered Sprecher Qoheleth 16x12 2024">
+            <p class="slide-caption">Jered Sprecher, <i>Qoheleth</i>, 16x12, 2024</p>
+          </div>
+          <!-- Slide 5 -->
+          <div class="slide">
+            <img src="images/jered-sprecher/JeredSprecher_Within_16x12_2024.jpg" alt="Jered Sprecher Within 16x12 2024">
+            <p class="slide-caption">Jered Sprecher, <i>Within</i>, 16x12, 2024</p>
+          </div>
+        </div>
+
+        <!-- 5 Small Square Indicators -->
+        <div class="slideshow-indicators" id="heroIndicators">
+          <button class="indicator-square active" aria-label="Slide 1" onclick="goToSlide(0)"></button>
+          <button class="indicator-square" aria-label="Slide 2" onclick="goToSlide(1)"></button>
+          <button class="indicator-square" aria-label="Slide 3" onclick="goToSlide(2)"></button>
+          <button class="indicator-square" aria-label="Slide 4" onclick="goToSlide(3)"></button>
+          <button class="indicator-square" aria-label="Slide 5" onclick="goToSlide(4)"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Upcoming Events -->
+  <section id="events" class="section-wrapper">
+    <div class="container">
+      <h2 class="section-title">upcoming events</h2>
+      <div class="events-grid">
+
+        <!-- Card 1 -->
+        <div class="event-card">
+          <div class="event-header">
+            <div class="event-info">
+              <div class="event-type">Opening Reception</div>
+              <div class="event-artist">Jered Sprecher</div>
+              <div class="event-title">A Selection of Recent Work</div>
+              <div class="event-time">Friday, October 30, 6:00-9:00 pm</div>
+            </div>
+            <img src="images/jered-sprecher/JeredSprecher_Exile_12x16_2024.jpg" alt="Event Thumbnail" class="event-thumb">
+          </div>
+          <p class="event-description">
+            Join us for an informal event with light refreshments and plenty of camaraderie and art banter. See Jered's new work that has never been exhibited in the Knoxville area. 
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="event-card">
+          <div class="event-header">
+            <div class="event-info">
+              <div class="event-type">Gallery Talk</div>
+              <div class="event-artist">Jered Sprecher</div>
+              <div class="event-title">A Selection of Recent Work</div>
+              <div class="event-time">Saturday, October 31, 2:00-3:30 pm</div>
+            </div>
+            <img src="images/jered-sprecher.jpg" alt="Jered Sprecher" class="event-thumb">
+          </div>
+          <p class="event-description">
+            This is a more focused event where Jered will entertain questions from the assembled guests and tell us about his motivations, inspirations, and process.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="event-card">
+                    <p class="event-description">
+            <strong>Can’t make it to the talk or reception?</strong> We have special hours Sunday, Nov. 1, 2:00-4:00 pm
+          <br/><br/></p>
+          <div class="event-header">
+            <div class="event-info">
+              <div class="event-type">Next Exhibition</div>
+              <div class="event-title">To Be Announced</div>
+              <div class="event-time">March 2027</div>
+            </div>
+            <!-- <img src="https://placehold.co/100" alt="Next Exhibition Preview" class="event-thumb"> -->
+          </div>
+          <p class="event-description">
+              If you're interested in exhibiting at ( and / or / space ), please <a href="#contact">send us</a> your contact information, social media handle, and/or website.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: About The Gallery Space -->
+  <section id="about" class="section-wrapper bg-gray">
+    <div class="container">
+      <h2 class="section-title">about the gallery space</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            ( and / or / space ) is housed in a 1950 building that was the home of a printing company for 60+ years. It was redesigned and renovated by curb, a Knoxville-based architectural firm that has earned numerous local, regional, and national design awards. In 2023, the front 800 square feet of the space was partitioned off and redesigned to be a short-term rental property with artwork installed throughout the space, particularly in the front room.
+          </p>
+          <p>          
+            Based on feedback from guests, the idea for the gallery was born. The space opens to the public for events, and during the more than 60% of the time it isn't booked, exhibitions are on view by appointment. Our exhibitions are up for several months rather than several weeks. We take no commission on sales—it all goes directly to the artist. We consciously schedule our opening receptions on the LAST FRIDAY of the month so that more folks can join our gatherings.
+          </p>
+        </div>
+        <div class="about-gallery">
+          <img src="images/gallery-exterior.jpg" alt="Exterior View">
+          <div class="about-gallery-stacked">
+            <img src="images/gallery-interior-3-walls-to-front.jpg" alt="Gallery Interior 1">
+            <img src="images/gallery-interior-back-and-right.jpg" alt="Gallery Interior 2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Contact -->
+  <section id="contact" class="section-wrapper">
+    <div class="container">
+      <h2 class="section-title">contact</h2>
+      <div class="contact-grid">
+
+        <!-- Info Column -->
+        <div class="contact-block">
+          <div class="contact-subtitle">Hours</div>
+          <div class="contact-text">Other than publicly announced events, gallery hours are by appointment.</div>
+
+          <div class="contact-subtitle">Location</div>
+          <div class="contact-text">
+            918 Stewart Street<br>
+            Knoxville, Tennessee
+          </div>
+
+          <div class="contact-subtitle">Stay Overnight in the Gallery</div>
+          <div class="contact-text">
+            If you've ever wanted to spend the night in an art gallery you can! The space also operates as a short term rental which you can 
+            <a href="https://www.airbnb.com/rooms/938479193854335719?guests=1&adults=1&s=67&unique_share_id=882ebc0f-d2dc-4636-91d1-d299415248fa" target="_blank" rel="noopener noreferrer" class="contact-link">BOOK HERE!</a>
+          </div>
+        </div>
+
+        <!-- Google Maps Column -->
+        <div class="map-container">
+          <iframe 
+            src="https://maps.google.com/maps?q=918%20Stewart%20St,%20Knoxville,%20TN%2037917&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Contact Form Column -->
+        <div class="contact-block">
+          <div class="contact-subtitle" style="margin-bottom: 20px;">Contact</div>
+          
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="email" name="email" placeholder="email address" required>
+            <input type="text" name="subject" placeholder="subject" required>
+            <textarea name="message" placeholder="message" rows="4" required></textarea>
+            <button type="submit" class="submit-btn">Send</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      &copy; COPYRIGHT 2026 AND / OR / SPACE
+    </div>
+  </footer>
+
+  <!-- JavaScript for Hero Slideshow -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const indicators = document.querySelectorAll('.indicator-square');
+    const totalSlides = slides.length;
+    let slideInterval;
+
+    function showSlide(index) {
+      if (index >= totalSlides) {
+        currentSlide = 0;
+      } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+      } else {
+        currentSlide = index;
+      }
+
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === currentSlide);
+      });
+
+      indicators.forEach((indicator, i) => {
+        indicator.classList.toggle('active', i === currentSlide);
+      });
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function goToSlide(index) {
+      showSlide(index);
+      // Permanently stop the automatic cycling when a user selects a square
+      clearInterval(slideInterval);
+    }
+
+    function startTimer() {
+      slideInterval = setInterval(nextSlide, 3000);
+    }
+
+    // Initialize automated slideshow on page load
+    startTimer();
+  </script>
+
+</body>
+</html>
